@@ -1,10 +1,15 @@
 #include <stdio.h>
 
-main <void 0>
+/**
+ * main : tarea 2
+ * Return: return 0
+ */
+int main <void>
+
 {
 	char letter;
 
-	for (letter = 'a'; letter <= 'z'; letter ++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 		putchar(letter);
 
 	putchar('\n');
