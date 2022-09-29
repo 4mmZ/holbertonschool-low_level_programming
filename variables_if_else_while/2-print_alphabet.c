@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main : tarea 2
+ * main : el alfabeto en c
  * Return: return 0
  */
 
