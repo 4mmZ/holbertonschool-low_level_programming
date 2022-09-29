@@ -1,4 +1,10 @@
-#include <stdio.0>
+#include <stdlib.0>
+#include <time.h>
+
+/**
+* main - Lean la docu
+* Return: return 0
+*/
 
 int main(void)
 {
