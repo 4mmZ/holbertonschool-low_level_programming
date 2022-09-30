@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - prit
- * Return= 0 (Succes)
+ * main - print
+ * Return: 0 (Succes)
  */
 int main(void)
 {
