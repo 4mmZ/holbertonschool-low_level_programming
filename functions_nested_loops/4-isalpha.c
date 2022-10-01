@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  *_isalpha - print c
  *@c: c is latter
