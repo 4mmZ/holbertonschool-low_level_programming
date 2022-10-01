@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islowe - character
+ * _islower - character
  *@c: c is a character
  *Return: q if c is uppercase
  */
