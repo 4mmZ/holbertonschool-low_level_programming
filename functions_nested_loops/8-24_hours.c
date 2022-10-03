@@ -2,8 +2,6 @@
 
 /**
  * jack_bauer - hours of the day
- * @h: hours
- * @m: minutes
  * Return: always 0
  */
 
