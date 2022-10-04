@@ -1,0 +1,5 @@
+all : main.c school.c
+CC = gcc
+SRC = main.c school.c
+NAME = school
+
