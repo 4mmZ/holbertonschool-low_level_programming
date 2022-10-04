@@ -8,7 +8,7 @@ all : $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 clean :
 	$(RM) *~ $(NAME)
-oclea :
+oclean :
 	$(RM) $(OBJ)
 
 fclean : clean clean
