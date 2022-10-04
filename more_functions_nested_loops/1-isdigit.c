@@ -2,9 +2,7 @@
 /**
  *_isdigit - un digito
  *@c: is a char
- *Return: 1 i fc is a digit and 0 if not 
- *
- *
+ *Return: 1 i fc is a digit and 0 if not
  */
 int _isdigit(int c)
 {
