@@ -1,13 +1,13 @@
 #include "main.h"
 /**
+ *more_numbers - 1 to 14
  *
  *
- *
- *
+ *Return: the result?
  */
 void more_numbers(void)
 {
-	int i,n;
+	int i, n;
 
 	i = 0;
 
