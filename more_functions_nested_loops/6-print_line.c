@@ -4,7 +4,7 @@
  *@n: numbers of time that the barritau will be ecxecuted
  *Return: none
  */
-void print_line(int n);
+void print_line(int n)
 {
 	while (n > 0)
 	{
