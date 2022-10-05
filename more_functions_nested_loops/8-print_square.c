@@ -4,7 +4,7 @@
  *@size: el tamaño del cuadrado
  *Return: un cuadradO
  */
-void print_scuare(int size)
+void print_square(int size)
 {
 	int x,y;
 
