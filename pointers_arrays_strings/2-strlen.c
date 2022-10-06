@@ -5,5 +5,11 @@
  */
 int _strlen(char *s)
 {
-	return(*s + '0');
+	int c = 0;
+	while (*s)
+	{
+		s = s + 1;
+		c++;
+	}
+	return(c);
 }
