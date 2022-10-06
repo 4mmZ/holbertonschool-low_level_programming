@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *rset_to_98 - a variable with a pointer
- *@*n: a pointer
+ *reset_to_98 - a variable with a pointer
+ *@n: a pointer
  *Return: a value
  */
 void reset_to_98(int *n)
