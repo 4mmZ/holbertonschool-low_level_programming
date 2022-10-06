@@ -3,7 +3,7 @@
  *_puts - char
  *@str: an string
  *Return: nothing
-*/ 
+*/
 void _puts(char *str)
 {
 	while (*str)
