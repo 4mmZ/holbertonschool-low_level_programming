@@ -1,11 +1,13 @@
 #include "main.h"
 /**
- *
- *
+ *print_rev - prin rev manitou
+ *@s: the string
+ *Return: the string rev
  */
 void print_rev(char *s)
 {
 	int c;
+
 	c = 0;
 	while (*s)
 	{
