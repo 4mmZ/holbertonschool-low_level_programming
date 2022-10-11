@@ -18,7 +18,7 @@ void rev_string(char *s)
 	}
 	n = i;
 
-	while (j <= n / 2)
+	while (j < n / 2)
 	{
 		m = s[n - 1 - j];
 		s[n - 1 - j] = s[j];
