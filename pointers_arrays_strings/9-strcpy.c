@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  **_strcpy - the function
-*@dest: the array
-* @src: the array
+*@dest: pointer
+* @src: pointer
 *Return: dest
 */
 
