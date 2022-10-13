@@ -1,1 +1,1 @@
-ayuda que es ua string
+eso brad
