@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_pritn_rev_recursion - revserse the string
+ *_print_rev_recursion - revserse the string
  *@s: the pointer
  *Return: void
  */
