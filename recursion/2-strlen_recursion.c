@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strlen_recursion - the function that the return the numbert of characters of the string
+ *_strlen_recursion - return the numbert of characters of the string
  *@s: a pointer
  *Return: (0)
  */
