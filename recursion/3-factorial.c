@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *
- *
+ *factorial - the recursion that print the fsctorial number of an 'n' value
+ *@n: a value
+ *Return: 1
  */
 
 int factorial(int n)
