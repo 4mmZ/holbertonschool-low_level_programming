@@ -10,24 +10,22 @@
 
 int main(int argc, char *argv[])
 {
-	int a;
 	int i;
 	int sum = 0;
+	int j;
 
-	if (argc < 3)
-	{
-		printf("0\n");
-	}
 	for (i = 1; i < argc; i++)
 	{
-		sum = sum + atoi(argv[i]);
-	}
-	for (a = 0; a < 256; a++)
-	{
-		if (a < 48 && a > 57)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("Error\n");
+			if (argv[i][j] <= 'z' && argv[i][j] >= 'a')
+			{
+				printf("Error\n");
+
+				return(1);
+			}
 		}
+		sum = sum + atoi(argv[i]);
 	}
 
 	printf("%d\n", sum);
