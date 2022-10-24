@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- *
- *
+ *create_array - the function that inicializes an string
+ *@c: a byte of type char
+ *@size: an unsigned int
+ *Return: str
  */
 
 char *create_array(unsigned int size, char c)
@@ -22,6 +24,6 @@ char *create_array(unsigned int size, char c)
 		{
 			str[i] = c;
 		}
-	}	
+	}
 	return (str);
 }
