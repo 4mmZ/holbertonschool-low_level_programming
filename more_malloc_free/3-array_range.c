@@ -1,39 +1,31 @@
 #include "main.h"
 
 /**
- *
- *
- *
- *
+ *arrat_range - the function that return the range of a array
+ *@min: the min value
+ *@max: the max value
+ *Return: a
  */
 
 int *array_range(int min, int max)
 {
-	int i, l;
-	int *a;
+	int i = 0, l = 0;
+	int *a = NULL;
 
 	if (min || max)
 	{
-		l = max - min;
+		l = max - min + 1;
 
-		if (min > max)
-		{
-			return (NULL);
-		}
-		a = malloc((sizeof(l) + 1));
+		a = malloc(sizeof(int) * (max - min + 1));
+
 		if (a == NULL)
 		{
 			return (NULL);
 		}
-		for (i = 0; i < l; i ++)
+		for (i = 0; i < l; i++)
 		{
 			a[i] = min;
-			if (a[i] > min)
-			{
-				a[i] = max;
-				
-			}
-
+			min++;
 		}
 	}
 	return (a);
