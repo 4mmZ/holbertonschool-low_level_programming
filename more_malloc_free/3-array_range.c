@@ -9,18 +9,32 @@
 
 int *array_range(int min, int max)
 {
-	if (size)
-	{
-		str = malloc((sizeof(char) * size));
+	int i, l;
+	int *a;
 
-		if (str == NULL)
+	if (min || max)
+	{
+		l = max - min;
+
+		if (min > max)
 		{
 			return (NULL);
 		}
-		for (i = 0; i < ; i++)
+		a = malloc((sizeof(l) + 1));
+		if (a == NULL)
 		{
-			[i] = ;
+			return (NULL);
+		}
+		for (i = 0; i < l; i ++)
+		{
+			a[i] = min;
+			if (a[i] > min)
+			{
+				a[i] = max;
+				
+			}
+
 		}
 	}
-	return ();
+	return (a);
 }
