@@ -1,21 +1,21 @@
 #ifndef dog_h
 #define dog_h
 #include <stdio.h>
-
 /**
- *struct dog - dog name
- *@name: name of my dog
- *@age: age of my dog
- *@owner: first owner of my dog
- *
- * Description: print my dogs name and their age and if the dogs have is owner
+ * struct dog - my first structure
+ * @name: first member
+ * @age: second member
+ * @owner: third member
+ * Description: structure of dog
  */
-
-
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 #endif
