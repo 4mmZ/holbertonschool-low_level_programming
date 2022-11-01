@@ -2,11 +2,10 @@
 #include <string.h>
 
 /**
- *
- *
- *
- *
- */
+*get_op_func - the function that compare a string and my structur
+*@s: a character to compare
+*Return: 0
+*/
 
 int (*get_op_func(char *s))(int, int)
 {
@@ -25,11 +24,11 @@ int (*get_op_func(char *s))(int, int)
 	{
 		if (strcmp(s, ops[i].op) == 0)
 		{
-			return(ops[i].f);
+			return (ops[i].f);
 		}
 		i++;
 	}
-	return(NULL);
+	return (NULL);
 
 
 }
