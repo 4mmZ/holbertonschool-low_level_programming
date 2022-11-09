@@ -1,31 +1,51 @@
 #include "main.h"
 
+/**
+ *print_str - function that print a string
+ *@ap: the arguments
+ *Return: 0
+ */
 int print_str(va_list ap)
 {
 	char *str = va_arg(ap, char *);
+	int i;
 
-	while(*str)
+	if(str)
 	{
-		_putchar(*str);
-		str = str + 1;
+		for (i = 0; *str; i++)
+		{
+			_putchar(*str);
+			str = str + 1;
+		}
 	}
-	return (0);
+	else
+	{
+		return (write(1, "(null)", 6));
+	}
+	return (i);
 }
 
-int print_perc(va_list ap)
+/**
+ *print_perc - function that print a percentage
+ *@ap: the arguments
+ *Return: 0
+ */
+int print_perc(__attribute__((unused))va_list ap)
 {
-	int c = va_arg(ap, int);
-	c = '%';
 
-	return(_putchar(c));
+	return (_putchar('%'));
 }
 
+/**
+ *print_char - function that prints a single character
+ *@ap: the arguments
+ *Return: 0
+ */
 int print_char(va_list ap)
 {
 	int c = va_arg(ap, int);
 
-	write(1, &c, 1);
-	return(0);
+	return(write(1, &c, 1));
 }
 
 
