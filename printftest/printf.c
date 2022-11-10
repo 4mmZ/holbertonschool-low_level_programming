@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	int cont = 0;
 
 	va_start(ap, format);
-	
+
 	if (format)
 	{
 		for (i = 0; format[i]; i++)

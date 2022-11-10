@@ -1,5 +1,5 @@
 #include "main.h"
- int border_case(__attribute__((unused))va_list ap);
+int border_case(__attribute__((unused))va_list ap);
 /**
 *printflags - the function that contains the printf flags
 *@format: the string that printflags takes
@@ -12,13 +12,15 @@ int (*printflags(const char format))(va_list)
 		{'c', print_char},
 		{'s', print_str},
 		{'%', print_perc},
-		/**{'i', print_int},*/
+		{'i', val_n},
+		{'d', val_n},
 		{'\0', NULL}
 	};
 	int j;
+
 	if (format)
 	{
-		for (j = 0; j < 5; j++)
+		for (j = 0; j < 7; j++)
 		{
 			if (format == func[j].c)
 			{
@@ -27,7 +29,7 @@ int (*printflags(const char format))(va_list)
 		}
 		_putchar('%');
 		_putchar(format);
-		return(border_case);
+		return (border_case);
 	}
 	else
 		return (NULL);

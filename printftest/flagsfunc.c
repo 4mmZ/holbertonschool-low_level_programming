@@ -1,5 +1,6 @@
 #include "main.h"
-
+int val_n(va_list ap);
+int print_int(int n);
 /**
  *print_str - function that print a string
  *@ap: the arguments
@@ -52,18 +53,29 @@ int print_char(va_list ap)
  *
  *
  *
- *
-int print_int(va_list ap);
+ */
+int print_int(int n)
 {
 	
-	int entero = va_arg(ap, int);
-	
-	if (entero > 9)i|
-
-	return(_putchar(entero));
+	if (n < 0)
+	{
+	_putchar('-');
+	n = n - 1;
+	}
+	if (n > 9) print_int(n/10);
+	{
+	_putchar('0' + (n%10));
+	}
+	return(0);
 
 }
-*/
+
+int val_n(va_list ap)
+{
+	int n = va_arg(ap, int);
+
+	return(print_int(n));
+}
 
 
 

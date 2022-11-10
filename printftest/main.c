@@ -9,13 +9,10 @@
  */
 int main(void)
 {
-    int len;
-    int len2;
+	int n = 123;
 
-    len = _printf("%s\n", "Hola, como estas?");
-    len2 = printf("%K");
-
-    printf("%d, %d", len, len2);
+	_printf("%i\n", n);
+	_printf("%d\n", n);
 
     return(0);
 }
