@@ -48,4 +48,23 @@ int print_char(va_list ap)
 	return(write(1, &c, 1));
 }
 
+/**
+ *
+ *
+ *
+ *
+int print_int(va_list ap);
+{
+	
+	int entero = va_arg(ap, int);
+	
+	if (entero > 9)i|
+
+	return(_putchar(entero));
+
+}
+*/
+
+
+
 

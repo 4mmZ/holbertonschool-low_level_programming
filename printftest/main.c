@@ -12,8 +12,10 @@ int main(void)
     int len;
     int len2;
 
-    len = printf("%K\n");
-    len2 = _printf("%K\n");
-    printf("%d\n%d\n", len, len2);
-    return (0);
+    len = _printf("%s\n", "Hola, como estas?");
+    len2 = printf("%K");
+
+    printf("%d, %d", len, len2);
+
+    return(0);
 }

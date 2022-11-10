@@ -13,23 +13,33 @@ int _printf(const char *format, ...)
 	int cont = 0;
 
 	va_start(ap, format);
-
-	for (i = 0; format[i]; i++)
+	
+	if (format)
 	{
-		if (format[i] == '%')
+		for (i = 0; format[i]; i++)
 		{
-			i++;
-			f = printflags(&format[i]);
-			if (f)
+			if (format[i] == '%')
 			{
-				cont += f(ap);
+				if (format[i + 1] != '\0')
+				{
+					i++;
+					f = printflags(format[i]);
+					if (f)
+					{
+						cont += f(ap);
+					}
+				}
+				else
+					return (-1);
+			}
+			else
+			{
+				cont += _putchar(format[i]);
 			}
 		}
-		else
-		{
-			cont += _putchar(format[i]);
-		}
 	}
+	else
+		cont--;
 	va_end(ap);
 	return (cont);
 }
