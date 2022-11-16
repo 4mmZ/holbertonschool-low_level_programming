@@ -2,7 +2,6 @@
 
 /**
  *print_list - function that print the contents of a list
- *@list_t: structure that conatins the list
  *@h: the list
  *Return: j
  */
