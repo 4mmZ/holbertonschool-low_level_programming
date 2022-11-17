@@ -1,6 +1,12 @@
 #include "lists.h"
 char *_strcpy(char *dest, char *src);
 
+/**
+*add_node - function that add a node in the begginin
+*@head: the first node of the list
+*@str: the string
+*Return: newnode
+ */
 
 
 list_t *add_node(list_t **head, const char *str)
@@ -10,18 +16,16 @@ list_t *add_node(list_t **head, const char *str)
 
 	newnode = malloc(sizeof(list_t));
 
-	newnode->str = strdup(str);
-
-	if (!head)
+	if (!newnode)
 	{
-		return(NULL);
+		free(newnode);
+		return (NULL);
 	}
-	else
-	{
-
-	}
-
-	new->len = strlen(str);
+		newnode->str = strdup(str);
+		newnode->len = strlen(str);
+		newnode->next = *head;
+		*head = newnode;
 
 	return (newnode);
+
 }
