@@ -4,7 +4,7 @@ list_t *add_node(list_t **head, const char *str);
  *add_node_end - function that add a node at the end of the list
  *@head: the pointer to the start of the list
  *@str: the string that runs the string
- *Return: last A.K.A te new node sited in the end of the loist
+ *Return: last A.K.A the new node sited in the end of the loist
  */
 
 list_t *add_node_end(list_t **head, const char *str)
