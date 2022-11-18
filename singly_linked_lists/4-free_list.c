@@ -2,7 +2,7 @@
 
 /**
  *free_list - functin that free a linked list
- *@head the start of the linked list
+ *@head: the start of the linked list
  *Return: void
  */
 
