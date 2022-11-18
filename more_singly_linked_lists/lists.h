@@ -19,10 +19,26 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 
+listint_t *add_nodeint(listint_t **head, const int n);
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 
+listint_t *add_node(const int n)
+{
+        listint_t *nnode = NULL;
 
+        nnode = malloc(sizeof(listint_t));
+
+        if (!nnode)
+        {
+                free(nnode);
+                return(NULL);
+        }
+        nnode->n = n;
+        nnode->next = NULL;
+
+        return (nnode);
+}
 
 
 
