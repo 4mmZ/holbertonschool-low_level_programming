@@ -1,7 +1,6 @@
 #include "lists.h"
 /**
- *pop_listint - function that deletes the head node of a linked list,
- and returns the head node data n
+ *pop_listint - function that deletes the head node of a linked list
  *@head: the linked list
  *Return: the head node n
  */
