@@ -9,14 +9,13 @@
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
- *
  * Description: singly linked list node structure
- * 
  */
+
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
 listint_t *add_nodeint_end(listint_t **head, const int n);
@@ -27,27 +26,5 @@ void free_listint(listint_t *head);
 void free_listint2(listint_t **head);
 int pop_listint(listint_t **head);
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
-
-/**listint_t *add_node(const int n)
-{
-        listint_t *nnode = NULL;
-
-        nnode = malloc(sizeof(listint_t));
-
-        if (!nnode)
-        {
-                free(nnode);
-                return(NULL);
-        }
-        nnode->n = n;
-        nnode->next = NULL;
-
-        return (nnode);
-}*/
-
-
-
-
-
 
 #endif
