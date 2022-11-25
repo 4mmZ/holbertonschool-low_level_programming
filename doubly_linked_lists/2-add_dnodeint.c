@@ -2,7 +2,8 @@
 
 /**
  *add_dnodeint - function that adds a new node at the beginning of a list
- *@h: pointer to the first node
+ *@n: integrers
+ *@head: The pointer to the pointer to the 1st node of the linked list
  *Return: the new node
  */
 
