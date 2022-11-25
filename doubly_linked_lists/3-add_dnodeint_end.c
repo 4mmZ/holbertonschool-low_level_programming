@@ -1,6 +1,4 @@
 #include "lists.h"
-#include "2-add_dnodeint.c"
-#include "4-free_dlistint.c"
 /**
  *add_dnodeint_end - function that adds a new node at the end of a list.
  *@head: pointer to the pointer to the first node
